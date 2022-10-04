@@ -1,0 +1,151 @@
+@import url(./reset.css);
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+
+.container__principal {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    width: 50vw;
+    margin: 20vh auto 0;
+}
+
+.sedans {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(31, 77%, 52%);
+    padding: 3vw 2vw;
+    border-radius: 7px 0 0 7px;
+    line-height: 1.5rem;
+}
+
+.suvs {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(184, 100%, 22%);
+    padding: 3vw 2vw;
+    line-height: 1.5rem;
+}
+
+.luxury {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(179, 100%, 13%);
+    padding: 3vw 2vw;
+    border-radius: 0 7px 7px 0;
+    line-height: 1.5rem;
+}
+
+.logo__carros {
+    width: 60px;
+    margin-bottom: 1rem;
+}
+
+.titulo {
+    font-family: 'Big Shoulders Display', cursive;;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+}
+
+.botoes {
+    text-decoration: none;
+    text-align: center;
+    margin-top: 4rem;
+    padding: 0.6rem 1.4rem;
+    border: 1px solid hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 25px;
+    width: fit-content;
+}
+
+.botao__sedan {
+    color:hsl(31, 77%, 52%);
+    transition: 0.3s;
+}
+
+.botao__suvs {
+    color: hsl(184, 100%, 22%);
+    transition: 0.3s;
+}
+
+.botao__luxury {
+    color: hsl(179, 100%, 13%);
+    transition: 0.3s;
+}
+
+.botao__sedan:hover {
+    background-color:hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    transition: 0.3s;
+}
+
+.botao__suvs:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    transition: 0.3s;
+}
+
+.botao__luxury:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    transition: 0.3s;
+}
+
+.attribution {
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 980px) {
+    .container__principal {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        width: 96vw;
+        margin: 5vh 2vw 1vw;
+    }
+
+    .sedans {
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(31, 77%, 52%);
+        padding: 3vw 10vw;
+        border-radius: 7px 7px 0 0;
+        line-height: 1.5rem;
+        padding-bottom: 2rem;
+    }
+    
+    .suvs {
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(184, 100%, 22%);
+        padding: 3vw 10vw;
+        line-height: 1.5rem;
+        padding-bottom: 2rem;
+    }
+    
+    .luxury {
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(179, 100%, 13%);
+        padding: 3vw 10vw;
+        border-radius: 0 0 7px 7px;
+        line-height: 1.5rem;
+        padding-bottom: 2rem;
+    }
+    
+    .logo__carros {
+        width: 60px;
+        margin-bottom: 1rem;
+    }
+
+
+}
